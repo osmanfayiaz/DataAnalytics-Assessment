@@ -1,7 +1,8 @@
+/* Question 1 High-Value Customers with Multiple Products  */
 SELECT 
     p.owner_id,
     u.name,
-    SUM(CASE WHEN p.plan_type_id IN (1, 4) AND p.amount > 0 THEN 1 ELSE 0 END) AS savings_count,
+    SUM(CASE WHEN p.plan_type_id IN (1, 4) AND p.amount > 0 THEN 1 ELSE 0 END) AS savings_count, 
     SUM(CASE WHEN p.plan_type_id NOT IN (1, 4) AND p.amount > 0 THEN 1 ELSE 0 END) AS investment_count,
     SUM(p.amount) AS total_deposits
 FROM 
