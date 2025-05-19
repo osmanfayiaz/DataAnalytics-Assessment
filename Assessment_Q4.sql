@@ -1,3 +1,4 @@
+/* Question 4  Customer Lifetime Value (CLV) Estimation */
 WITH customer_stats AS (
     SELECT 
         p.owner_id AS customer_id,
