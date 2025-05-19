@@ -1,3 +1,4 @@
+/* Question 2 Transaction Frequency Analysis  */
 WITH monthly_transactions AS (
     SELECT 
         owner_id,
