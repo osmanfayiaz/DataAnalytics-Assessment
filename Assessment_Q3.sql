@@ -1,3 +1,4 @@
+/* Question 3 Account Inactivity Alert  */
 SELECT 
     p.id AS plan_id,
     p.owner_id,
